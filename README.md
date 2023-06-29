@@ -1,1 +1,2 @@
-# monasterio-html
+npm install
+npm start
