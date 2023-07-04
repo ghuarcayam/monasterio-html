@@ -4,13 +4,10 @@ import './App.css';
 import './theme-prime.css'
 import "primereact/resources/primereact.min.css"; 
 import 'primeicons/primeicons.css';
+import 'primeflex/primeflex.min.css'
 import ContentHTML from './ContentHTML'
 
 function App() {
-  const aa = 1;
-
-
-
   
   return (
     <div className="App">
