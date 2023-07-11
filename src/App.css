@@ -1,4 +1,157 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Roboto', serif;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Roboto Slab', serif;
+}
+.bg-red{
+  background-color: #E9603C;
+}
+/* START BUTTONS */
+/* Default */
+.p-button.p-button-text {
+  color: #E9603C !important;
+}
+.p-button.p-button-text:enabled:hover, .p-button.p-button-text:not(button):not(a):not(.p-disabled):hover {
+  background: rgba(233, 96, 60, 0.04) !important;
+  color: #E9603C !important;
+}
+.p-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(233, 96, 60, 0.5) !important;
+}
+/* Raised*/
+.p-button.p-button-raised {
+  background: #ffffff !important;
+}
+.p-button.p-button-raised:enabled:hover, .p-button.p-button-raised:not(button):not(a):not(.p-disabled):hover {
+  background: #ffffff !important;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08), 0px 3px 4px rgba(0, 0, 0, 0.1), 0px 1px 4px -1px rgba(0, 0, 0, 0.1) !important;
+}
+/* END BUTTONS */
+
+/* START ACCORDEON */
+.p-accordion .p-accordion-tab {
+  border-radius: 8px;
+}
+.p-accordion-header-link {
+  border: none !important;
+}
+.p-accordion .p-accordion-content {
+  border: none !important;
+}
+.p-accordion .p-accordion-header .p-accordion-header-link{
+    border-radius: 8px !important;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+}
+.p-accordion .p-accordion-header:hover .p-accordion-header-link {
+    background-color: #f2f2f2 !important;
+}
+.p-accordion-tab-active {
+    background-color: #e9603c20;
+}
+.p-accordion-tab-active .p-accordion-header-link, .p-accordion-tab-active .p-accordion-content {
+    background-color: transparent !important;
+}
+.p-accordion-tab-active .p-accordion-header-link {
+    color: #e9603c !important;  
+}
+.p-accordion-tab-active .p-accordion-content {  
+  padding-top: 0 !important;
+}
+.p-accordion-tab-active .p-accordion-header .p-accordion-header-link, .p-accordion-tab-active  .p-accordion-header:hover .p-accordion-header-link{
+  background-color: transparent !important;
 }
 
+
+/* END ACCORDEON */
+
+
+
+/* ============================== */
+/* ========== START HEADER ========== */
+/* ============================== */
+header{
+}
+/* ============================== */
+/* ========== END HEADER ========== */
+/* ============================== */
+
+
+
+/* ========== */
+/* START SPLASH PAGE ========== */
+/* ========== */
+#splash-rb{
+  background-image: url("../public/bg-splash.png");
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+.logo-splash {
+  width: 320px;
+  margin: 160px 0 0 0;
+}
+/* ========== */
+/* END SPLASH PAGE ========== */
+/* ========== */
+
+
+
+/* ========== */
+/* START HOME PAGE ========== */
+/* ========== */
+.container-rb{
+  padding: 0 3%;
+}
+.itemVisit{
+  border-radius: 12px;
+  overflow: auto;
+}
+.topItemVisit{
+}
+.topItemVisit img{
+  width: 100%;
+}
+.bottomItemVisit{
+}
+/* ========== */
+/* END HOME PAGE ========== */
+/* ========== */
+
+
+
+/* ============================== */
+/* ========== START FOOTER ========== */
+/* ============================== */
+footer{
+  background-color: #020202;
+}
+.social {
+  width: 48px;
+  line-height: 48px;
+  background-color: transparent;
+  border-radius: 24px;
+}
+.social .pi {
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+.social:hover {
+  background-color: #ffffff40;
+}
+/* ============================== */
+/* ========== END FOOTER ========== */
+/* ============================== */
