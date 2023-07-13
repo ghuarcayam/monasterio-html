@@ -4,14 +4,54 @@
 *{
   font-family: 'Roboto', serif;
 }
+a {
+  color: #e9603c;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 h1, h2, h3, h4, h5, h6{
   font-family: 'Roboto Slab', serif;
 }
 .bg-red{
   background-color: #E9603C;
 }
+.bg-red-16{
+  background-color: #E9603C16;
+}
+/* START FORM */
+/* Input text */
+.p-inputtext:enabled:hover {
+  border-color: #020202 !important;
+}
+.p-inputtext:enabled:focus {
+  box-shadow: 0 0 0 0.2rem #02020250 !important;
+  border-color: #020202 !important;
+}
+/* Dropdown */
+.p-dropdown:not(.p-disabled):hover {
+  border-color: #020202 !important;
+}
+.p-dropdown:not(.p-disabled).p-focus {
+  box-shadow: 0 0 0 0.2rem #02020250 !important;
+  border-color: #020202 !important;
+}
+/* END FORMS */
+
+
+
 /* START BUTTONS */
 /* Default */
+.p-button-label{
+  font-family: 'Roboto Slab', serif !important;
+}
+/* Primary */
+.p-button {
+  background: #E9603C !important;
+  border: 1px solid #E9603C !important;
+}
 .p-button.p-button-text {
   color: #E9603C !important;
 }
@@ -22,7 +62,31 @@ h1, h2, h3, h4, h5, h6{
 .p-button:focus {
   box-shadow: 0 0 0 0.2rem rgba(233, 96, 60, 0.5) !important;
 }
-/* Raised*/
+/* Text */
+.p-button.p-button-text {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+/* Outline */
+.p-button.p-button-outlined {
+  background-color: transparent !important;
+  color: #e9603c !important;
+  border: 1px solid #E9603C !important;
+}
+.p-button.p-button-outlined:enabled:hover, .p-button.p-button-outlined:not(button):not(a):not(.p-disabled):hover {
+  background: #e9603c !important;
+  color: #fff !important;
+  border: 1px solid #e9603c;
+}
+
+/* Link */
+.p-button.p-button-link {
+  color: #e9603c !important;
+  background: transparent !important;
+  border: transparent !important;
+  padding: 0 !important;
+}
+/* Primary raised*/
 .p-button.p-button-raised {
   background: #ffffff !important;
 }
@@ -30,6 +94,61 @@ h1, h2, h3, h4, h5, h6{
   background: #ffffff !important;
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08), 0px 3px 4px rgba(0, 0, 0, 0.1), 0px 1px 4px -1px rgba(0, 0, 0, 0.1) !important;
 }
+
+
+/* icon top */
+.p-button.p-button-secondary.p-button-text, .p-buttonset.p-button-secondary > .p-button.p-button-text, .p-splitbutton.p-button-secondary > .p-button.p-button-text, .p-fileupload-choose.p-button-secondary.p-button-text {
+  background-color: transparent !important;
+  color: #020202 !important;
+  border-color: transparent !important;
+}
+.p-button.p-button-secondary.p-button-text:enabled:hover, .p-button.p-button-secondary.p-button-text:not(button):not(a):not(.p-disabled):hover, .p-buttonset.p-button-secondary > .p-button.p-button-text:enabled:hover, .p-buttonset.p-button-secondary > .p-button.p-button-text:not(button):not(a):not(.p-disabled):hover, .p-splitbutton.p-button-secondary > .p-button.p-button-text:enabled:hover, .p-splitbutton.p-button-secondary > .p-button.p-button-text:not(button):not(a):not(.p-disabled):hover, .p-fileupload-choose.p-button-secondary.p-button-text:enabled:hover, .p-fileupload-choose.p-button-secondary.p-button-text:not(button):not(a):not(.p-disabled):hover {
+  background:#02020208 !important;
+  border-color: transparent !important;
+  color: #020202 !important;
+}
+
+
+
+
+/* Seconadary */
+.p-button.p-button-secondary.p-button-text, .p-buttonset.p-button-secondary > .p-button.p-button-text, .p-splitbutton.p-button-secondary > .p-button.p-button-text, .p-fileupload-choose.p-button-secondary.p-button-text{
+  color: #020202 !important;
+}
+.p-button.p-button-secondary.p-button-text:enabled:hover, .p-button.p-button-secondary.p-button-text:not(button):not(a):not(.p-disabled):hover, .p-buttonset.p-button-secondary > .p-button.p-button-text:enabled:hover, .p-buttonset.p-button-secondary > .p-button.p-button-text:not(button):not(a):not(.p-disabled):hover, .p-splitbutton.p-button-secondary > .p-button.p-button-text:enabled:hover, .p-splitbutton.p-button-secondary > .p-button.p-button-text:not(button):not(a):not(.p-disabled):hover, .p-fileupload-choose.p-button-secondary.p-button-text:enabled:hover, .p-fileupload-choose.p-button-secondary.p-button-text:not(button):not(a):not(.p-disabled):hover{
+  background: #02020212 !important;
+  color: #020202 !important;
+}
+.p-button.p-button-secondary:enabled:focus, .p-button.p-button-secondary:not(button):not(a):not(.p-disabled):focus, .p-buttonset.p-button-secondary > .p-button:enabled:focus, .p-buttonset.p-button-secondary > .p-button:not(button):not(a):not(.p-disabled):focus, .p-splitbutton.p-button-secondary > .p-button:enabled:focus, .p-splitbutton.p-button-secondary > .p-button:not(button):not(a):not(.p-disabled):focus, .p-fileupload-choose.p-button-secondary:enabled:focus, .p-fileupload-choose.p-button-secondary:not(button):not(a):not(.p-disabled):focus {
+  box-shadow: 0 0 0 0.2rem #02020240 !important;
+}
+
+.p-button.p-button-secondary, .p-buttonset.p-button-secondary > .p-button, .p-splitbutton.p-button-secondary > .p-button, .p-fileupload-choose.p-button-secondary {
+  background: #6c757d !important;
+  border: 1px solid #6c757d !important;
+}
+.p-button.p-button-secondary:enabled:hover, .p-button.p-button-secondary:not(button):not(a):not(.p-disabled):hover, .p-buttonset.p-button-secondary > .p-button:enabled:hover, .p-buttonset.p-button-secondary > .p-button:not(button):not(a):not(.p-disabled):hover, .p-splitbutton.p-button-secondary > .p-button:enabled:hover, .p-splitbutton.p-button-secondary > .p-button:not(button):not(a):not(.p-disabled):hover, .p-fileupload-choose.p-button-secondary:enabled:hover, .p-fileupload-choose.p-button-secondary:not(button):not(a):not(.p-disabled):hover {
+  background: #5a6268 !important;
+  border-color: #5a6268 !important;
+}
+/* Secondary outlined */
+.p-button.p-button-secondary.p-button-outlined, .p-buttonset.p-button-secondary > .p-button.p-button-outlined, .p-splitbutton.p-button-secondary > .p-button.p-button-outlined, .p-fileupload-choose.p-button-secondary.p-button-outlined {
+  background-color: transparent !important;
+  color: #6c757d !important;
+}
+
+/* Secondary link */
+.p-button.p-button-link.p-button-secondary {
+  color: #02020280 !important;
+  background-color: transparent !important;
+  border: transparent !important;
+}
+.p-button.p-button-link.p-button-secondary:hover {
+  color: #020202 !important;
+  background-color: transparent !important;
+  border: transparent !important;
+}
+
 /* END BUTTONS */
 
 /* START ACCORDEON */
@@ -50,6 +169,10 @@ h1, h2, h3, h4, h5, h6{
 .p-accordion .p-accordion-header:hover .p-accordion-header-link {
     background-color: #f2f2f2 !important;
 }
+.p-accordion-header-text {
+  font-family: 'Roboto Slab';
+  font-weight: 500;
+}
 .p-accordion-tab-active {
     background-color: #e9603c20;
 }
@@ -65,16 +188,69 @@ h1, h2, h3, h4, h5, h6{
 .p-accordion-tab-active .p-accordion-header .p-accordion-header-link, .p-accordion-tab-active  .p-accordion-header:hover .p-accordion-header-link{
   background-color: transparent !important;
 }
-
-
 /* END ACCORDEON */
 
+/* START TABS VIEW */
+.p-tabview-panels{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* END TABS VIEW */
+
+/* START GALLERY */
+.p-galleria-item {
+  border-radius: 16px;
+  overflow: auto;
+}
+.p-galleria-item-nav-onhover .p-galleria-item-wrapper:hover .p-galleria-item-nav {
+  margin-top: -32px;
+}
+.p-galleria .p-galleria-indicators .p-galleria-indicator button {
+  border-radius: 10px !important;
+}
+.p-galleria .p-galleria-indicators .p-galleria-indicator.p-highlight button {
+  background-color: #e9603c !important;
+}
+.p-galleria .p-link:focus {
+  box-shadow: 0 0 0 0.2rem #e9603c50 !important;
+}
+/* END GALLERY*/
 
 
 /* ============================== */
 /* ========== START HEADER ========== */
 /* ============================== */
-header{
+header span.p-dropdown-label.p-inputtext.p-placeholder{
+  /*padding-right: 0;*/
+}
+header .p-dropdown .p-dropdown-trigger{
+  display: none;
+}
+header .p-dropdown:not(.p-disabled) {
+  border-color: transparent;
+}
+header .p-dropdown:not(.p-disabled):hover {
+  border-color: transparent !important;
+  background-color: #02020212;
+}
+header .p-dropdown:not(.p-disabled).p-focus {
+  box-shadow: 0 0 0 0.2rem #02020250 !important;
+  border-color: #020202 !important;
+}
+header .p-overlay-badge .p-badge {
+  top: 5px;
+  right: 5px;
+}
+header .p-badge {
+  background: #e9603c;
+  font-weight: 600;
+  min-width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+}
+
+.titlePage-rb{
+  border-top: 1px solid #ddd
 }
 /* ============================== */
 /* ========== END HEADER ========== */
@@ -130,6 +306,42 @@ header{
 
 
 
+/* ========== */
+/* START DETAIL PRODUCT PAGE ========== */
+/* ========== */
+.total-rb{ 
+  width: calc(100% + 3rem);
+  padding: 1.5rem;
+  margin-left: -1.5rem;
+  margin-bottom: -2.5rem;
+  border-top: 1px solid #ddd;
+}
+/* ========== */
+/* END DETAIL PRODUCT PAGE ========== */
+/* ========== */
+
+
+
+/* ========== */
+/* START CHECKOUT PAGE ========== */
+/* ========== */
+.field .opt-rb {
+}
+.field .opt-rb:hover {
+  border-color: #020202 !important
+}
+.field .opt-selected-rb, .field .opt-selected-rb:hover {
+  background: #e9603c20;
+  border-color: #e9603c !important;
+  color: #e9603c;
+  font-weight: bold !important;
+}
+/* ========== */
+/* END CHECKOUT PAGE ========== */
+/* ========== */
+
+
+
 /* ============================== */
 /* ========== START FOOTER ========== */
 /* ============================== */
@@ -155,3 +367,19 @@ footer{
 /* ============================== */
 /* ========== END FOOTER ========== */
 /* ============================== */
+
+
+@media only screen and (min-width: 481px) {
+
+}
+@media only screen and (min-width: 820px) {
+/* ========== */
+/* START HOME PAGE ========== */
+/* ========== */
+.container-rb{
+  padding: 0 10%;
+}
+/* ========== */
+/* END HOME PAGE ========== */
+/* ========== */
+}
