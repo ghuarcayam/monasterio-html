@@ -90,7 +90,7 @@ function App() {
 
   return (
     <div>
-      <header className="shadow-1 fixed w-full z-1 bg-white">
+      <header className="shadow-1 fixed w-full z-2 bg-white">
         <div className="grid m-0">
           <div className="col-2 text-left">
             <Button className="" severity="secondary" icon="pi pi-home" rounded text aria-label="" />

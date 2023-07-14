@@ -19,24 +19,21 @@ import { Password } from 'primereact/password';
 function ContentHTML() {
 
     const items = [
-        //{
-        //    label: 'Personal'
-        //},
-        //{
-        //    label: 'Seat'
-        //},
-        //{
-        //    label: 'Payment'
-        //},
-        //{
-        //    label: 'Confirmation'
-        //},       
         {
-            label: 'Sobre la visita'
+            label: 'Productos'
         },
         {
-            label: 'Información adicional'
-        }
+            label: 'Pago'
+        },
+        {
+            label: 'Confirmación'
+        },
+        //{
+        //    label: 'Sobre la visita'
+        //},
+        //{
+        //    label: 'Información adicional'
+        //}
     ];
     const [images, setImages] = useState([]);
     const responsiveOptions = [
@@ -123,7 +120,7 @@ function ContentHTML() {
 
 
     const [date, setDate] = useState(null);
-    
+
 
 
 
@@ -133,8 +130,10 @@ function ContentHTML() {
 
     return (
         <>
-            <div id="SPLASH-RB" className="hidden">
-                <img className="logo-splash" src="logo-monasterio-white.svg" />
+            <div id="SPLASH-RB" className="">
+                <div className="splash-rb fixed w-full h-full top-0 left-0 text-center z-3">
+                    <img className="logo-splash" src="logo-monasterio-white.svg" />
+                </div>
             </div>
             <div id="HOME-RB" className="hidden">
                 <div className="container-rb pt-4">
@@ -271,7 +270,7 @@ function ContentHTML() {
                                             placeholder="Selecciona un circuito" className="w-full" />
                                     </div>
                                     <div className="field col-12">
-                                        <Calendar value={date} touchUI />
+                                        <Calendar value={date} className="w-full" />
                                     </div>
                                     <div className="field col-12">
                                         <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
@@ -281,7 +280,7 @@ function ContentHTML() {
                                         <span className="font-semibold">Ingresa la cantidad de visitantes</span>
                                     </div>
                                     <div className="col-12 py-4 flex">
-                                        <img className="mr-2" src="icon-peru.svg" /><span className="font-medium opacity-70">Visitantes peruanos</span>
+                                        <img className="mr-2" src="icon-peru.svg" /><span className="font-medium opacity-70">Visitantes peruanos</span><span className="opacity-70 ml-1">(1)</span>
                                     </div>
                                     <div className="field col-5 md:col-6">
                                         <span className="w-full inline-block font-semibold">Adultos</span>
@@ -319,8 +318,15 @@ function ContentHTML() {
                                         <InputText placeholder="0" className="w-full flex-1 text-center" />
                                         <Button className="flex ml-2" icon="pi pi-plus" rounded text aria-label="" />
                                     </div>
+                                    <div className="field col-12">
+                                        <div className="surface-100 border-round-lg p-3">
+                                            <span className="mb-2 w-full inline-block">Indica un departamento origen</span>
+                                            <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
+                                                placeholder="Selecciona un departamento" className="w-full" />
+                                        </div>
+                                    </div>
                                     <div className="col-12 pt-2 pb-4 flex">
-                                        <img className="mr-2" src="icon-extranjero.svg" /><span className="font-medium opacity-70">Visitantes extranjeros</span>
+                                        <img className="mr-2" src="icon-extranjero.svg" /><span className="font-medium opacity-70">Visitantes extranjeros</span><span className="opacity-70 ml-1">(1)</span>
                                     </div>
                                     <div className="field col-5 md:col-6">
                                         <span className="w-full inline-block font-semibold">Universitarios</span>
@@ -340,6 +346,13 @@ function ContentHTML() {
                                         <InputText placeholder="0" className="w-full flex-1 text-center" />
                                         <Button className="flex ml-2" icon="pi pi-plus" rounded text aria-label="" />
                                     </div>
+                                    <div className="field col-12">
+                                        <div className="surface-100 border-round-lg p-3">
+                                            <span className="mb-2 w-full inline-block">Indica un país origen</span>
+                                            <Dropdown value={selectedCountry} onChange={(e) => setSelectedCountry(e.value)} options={countries} optionLabel="name" placeholder="Selecciona un país"
+                                                filter valueTemplate={selectedCountryTemplate} itemTemplate={countryOptionTemplate} className="w-full" />
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="grid mx-0 p-3 border-top-1 border-300 md:p-4">
                                     <div className="col-7 text-lg font-medium">Costo de visita</div>
@@ -354,10 +367,13 @@ function ContentHTML() {
                 </div>
             </div>
             <div id="CHECKOUT-1-RB" className="hidden">
-                <div className="container-rb pt-7">
-                    <div className="grid m-0 pt-7">
-                        <div className="col-12 md:col-8 border-bottom-1 border-300 mb-3 pb-4 md: mb-0 md:pb-0 md:pr-0 md:border-right-1 md:border-bottom-none">
-                            <div className="grid mx-0 md:p-4">
+                <div className="container-rb pt-7 pb-4 surface-100">
+                    <Steps model={items} className="pt-7" />
+                </div>
+                <div className="container-rb pt-5">
+                    <div className="grid m-0">
+                        <div className="col-12 md:col-8 border-bottom-1 border-300 mb-3 pb-4 pt-0 md: mb-0 md:pb-0 md:pr-0 md:border-right-1 md:border-bottom-none">
+                            <div className="grid mx-0 md:px-4">
                                 <div className="col-12 pb-3 md:pb-4">
                                     <h3 className="my-0">Productos<span className="font-normal ml-1">(1)</span></h3>
                                 </div>
@@ -427,17 +443,6 @@ function ContentHTML() {
                                 <div className="col-7 text-lg font-medium">Total a pagar</div>
                                 <div className="col-5 text-lg font-bold text-right">S/ 0.00</div>
                                 <div className="col-12">
-                                    <div className="formgrid grid mx-0 surface-100 border-round-lg py-3 px-2">
-                                        <div className="field col-12">
-                                            Para continuar indica un país de origen para los visitantes extranjeros que asistirán al recorrido.
-                                        </div>
-                                        <div className="field col-12 mb-0">
-                                            <Dropdown value={selectedCountry} onChange={(e) => setSelectedCountry(e.value)} options={countries} optionLabel="name" placeholder="Select a Country"
-                                                filter valueTemplate={selectedCountryTemplate} itemTemplate={countryOptionTemplate} className="w-full" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-12">
                                     <Button className="font-semibold w-full" size="large" icon="" label="Continuar con la compra" />
                                 </div>
                             </div>
@@ -445,11 +450,14 @@ function ContentHTML() {
                     </div>
                 </div>
             </div>
-            <div id="CHECKOUT-2-RB" className="">
-                <div className="container-rb pt-7">
-                    <div className="grid m-0 pt-7">
-                        <div className="col-12 md:col-8 border-bottom-1 border-300 mb-3 pb-4 md: mb-0 md:pb-0 md:pr-0 md:border-right-1 md:border-bottom-none">
-                            <div className="grid mx-0 md:p-4">
+            <div id="CHECKOUT-2-RB" className="hidden">
+                <div className="container-rb pt-7 pb-4 surface-100">
+                    <Steps model={items} className="pt-7" />
+                </div>
+                <div className="container-rb pt-5">
+                    <div className="grid m-0">
+                        <div className="col-12 md:col-8 border-bottom-1 border-300 mb-3 pb-4 pt-0 md: mb-0 md:pb-0 md:pr-0 md:border-right-1 md:border-bottom-none">
+                            <div className="grid mx-0 md:px-4">
                                 <div className="col-12 pb-3 md:pb-4">
                                     <h3 className="my-0">Pago</h3>
                                 </div>
@@ -564,7 +572,7 @@ function ContentHTML() {
                                     <div className="formgrid grid mx-0">
                                         <div className="field col-12 px-0 flex align-items-start flex-wrap">
                                             <div className="flex align-items-center justify-content-center mr-2">
-                                                <Checkbox checked={checked}></Checkbox>       
+                                                <Checkbox checked={checked}></Checkbox>
                                             </div>
                                             <span className="flex-1 align-items-center justify-content-center">He leído y acepto los <a href="#">términos y condiciones</a>
                                                 de santacatalina.org.pe y autorizo la <a href="#">política de privacidad.</a></span>
@@ -580,10 +588,13 @@ function ContentHTML() {
                 </div>
             </div>
             <div id="CHECKOUT-3-RB" className="hidden">
-                <div className="container-rb pt-7">
-                    <div className="grid m-0 pt-7">
-                        <div className="col-12 md:col-8 border-bottom-1 border-300 mb-3 pb-4 md: mb-0 md:pb-0 md:pr-0 md:border-right-1 md:border-bottom-none">
-                            <div className="grid mx-0 md:p-4">
+                <div className="container-rb pt-7 pb-4 surface-100">
+                    <Steps model={items} className="pt-7" />
+                </div>
+                <div className="container-rb pt-5">
+                    <div className="grid m-0">
+                        <div className="col-12 md:col-8 border-bottom-1 border-300 mb-3 pb-4 pt-0 md: mb-0 md:pb-0 md:pr-0 md:border-right-1 md:border-bottom-none">
+                            <div className="grid mx-0 md:px-4">
                                 <div className="col-12 pb-3 md:pb-2">
                                     <h2 className="mt-0">Orden #2874947</h2>
                                     <div className="text-lg">Gracias por tu compra, hemos enviado toda la información sobre la compra al correo <span className="font-medium">visitante@gmail.com</span></div>
@@ -718,8 +729,8 @@ function ContentHTML() {
                     </div>
                 </div>
             </div>
-            <Sidebar visible={visibleRight} position="right" onHide={() => setVisibleRight(false)} className="p-sidebar-full md:p-sidebar-sm">
-                <div id="VISITORS" className="hidden">
+            <Sidebar visible={visibleRight} position="right" onHide={() => setVisibleRight(false)} className="w-full md:w-3">
+                <div id="VISITORS" className="">
                     <h3>Detalle de visitantes</h3>
                     <div className="grid">
                         <div className="col-12 pt-4 pb-3 flex">
@@ -753,6 +764,13 @@ function ContentHTML() {
                         <div className="col-4">
                             <InputText placeholder="0" className="w-full flex-1 text-center" />
                         </div>
+                        <div className="col-12">
+                            <div className="surface-100 border-round-lg p-3">
+                                <span className="mb-2 w-full inline-block text-sm">Departamento origen</span>
+                                <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
+                                                placeholder="Selecciona un departamento" className="w-full" />
+                            </div>
+                        </div>
                         <div className="col-12 pt-2 pt-4 pb-3 flex">
                             <img className="mr-2" src="icon-extranjero.svg" /><span className="font-medium opacity-70">Visitantes extranjeros</span>
                         </div>
@@ -770,18 +788,16 @@ function ContentHTML() {
                         <div className="col-4">
                             <InputText placeholder="0" className="w-full flex-1 text-center" />
                         </div>
-                    </div>
-                    <div className="grid mx-0 surface-100 border-round-lg p-3 mt-3 flex align-items-center flex-wrap">
-                        <div className="text-sm font-medium mr-2 flex">
-                            País de origen
-                        </div>
-                        <div className="flex-1">
-                            <Dropdown value={selectedCountry} onChange={(e) => setSelectedCountry(e.value)} options={countries} optionLabel="name" placeholder="Select a Country"
-                                filter valueTemplate={selectedCountryTemplate} itemTemplate={countryOptionTemplate} className="w-full" />
+                        <div className="col-12">
+                            <div className="surface-100 border-round-lg p-3">
+                                <span className="mb-2 w-full inline-block text-sm">País origen</span>
+                                <Dropdown value={selectedCountry} onChange={(e) => setSelectedCountry(e.value)} options={countries} optionLabel="name" placeholder="Selecciona un país"
+                                    filter valueTemplate={selectedCountryTemplate} itemTemplate={countryOptionTemplate} className="w-full" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="SING-IN" className="">
+                <div id="SING-IN" className="hidden">
                     <h3>Que bueno tenerte por aquí!</h3>
                     <div className="formgrid grid">
                         <div className="field col-12">
