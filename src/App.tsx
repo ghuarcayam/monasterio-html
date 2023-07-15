@@ -89,8 +89,8 @@ function App() {
   };
 
   return (
-    <div>
-      <header className="shadow-1 fixed w-full z-2 bg-white">
+    <div className="">
+      <header className="shadow-1 fixed w-full z-2 bg-white hidden">
         <div className="grid m-0">
           <div className="col-2 text-left">
             <Button className="" severity="secondary" icon="pi pi-home" rounded text aria-label="" />
@@ -120,7 +120,7 @@ function App() {
         </div>
       </header>
       <ContentHTML />
-      <footer className="container-rb mt-6 text-white text-center pt-5 pb-7 md:text-left">
+      <footer className="container-rb mt-6 text-white text-center pt-5 pb-7 md:text-left hidden">
         <div className="grid m-0">
           <div className="col-12 md:col-4">
             <h3>Sobre el sitio</h3>

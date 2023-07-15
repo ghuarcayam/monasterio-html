@@ -130,7 +130,274 @@ function ContentHTML() {
 
     return (
         <>
-            <div id="SPLASH-RB" className="">
+            <div id="MAIL-RB" className="">
+                <div style={{ backgroundColor: "#fff", position: "fixed", width: "100%", height: "100%", top: "0", left: "0", zIndex: "1001", fontSize: "16px", overflowY: "auto" }}>
+                    {/* HEADER */}
+                    <div style={{ backgroundColor: "#020202", width: "100%", padding: "16px 0 12px 0", textAlign: "center" }}>
+                        <img style={{ maxWidth: "260px", }} src="logo-2-white.svg" />
+                    </div>
+                    {/* CONTENT TOP */}
+                    <div style={{padding: "40px 24px"}}>
+                        {/* GREETING CUSTOMER */}
+                        <div style={{ fontSize: "19px", width: "100%", display: "inline-block" }}>
+                            <img style={{ width: "48px", float: "left", clear: "right", marginRight: "12px" }} src="icon-hand.svg" />
+                            <div style={{ float: "left", clear: "right" }}>
+                                <div style={{ fontWeight: "500" }}>Hola Usuario!</div>
+                                <div style={{}}>gracias por tu compra</div>
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        {/* DATOS DE LA ORDEN */}
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{ fontSize: "13px", fontWeight: "600", textTransform: "uppercase", opacity: ".48", marginBottom: "10px" }}>
+                                Datos de la orden
+                            </div>
+                            <div style={{}}>
+                                <div style={{ color: "#E9603C", fontWeight: "700", fontSize: "21px", marginBottom: "12px" }}>Orden #204849850</div>
+                            </div>
+                            <div style={{ marginBottom: "8px" }}>
+                                <div style={{}}>Fecha y hora de compra</div>
+                                <div style={{ fontWeight: "500", lineHeight: "24px" }}>00/00/2023 a las 00:00 am</div>
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        {/* DATOS DEL CLIENTE */}
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{ fontSize: "13px", fontWeight: "600", textTransform: "uppercase", opacity: ".48", marginBottom: "10px" }}>
+                                Datos del cliente
+                            </div>
+                            <div style={{}}>
+                                <div style={{}}>
+                                    <div style={{ fontWeight: "500", fontSize: "19px", marginBottom: "12px" }}>Nombre Nombre Apellido Apellido</div>
+                                </div>
+                                <div style={{ marginBottom: "8px" }}>
+                                    <div style={{}}>Documento de identidad</div>
+                                    <div style={{ fontWeight: "500", lineHeight: "24px" }}>DNI 73326399</div>
+                                </div>
+                                <div style={{ marginBottom: "8px" }}>
+                                    <div style={{}}>Correo electrónico</div>
+                                    <div style={{ fontWeight: "500", lineHeight: "24px" }}>visitante@gmail.com</div>
+                                </div>
+                                <div style={{}}>
+                                    <div style={{}}>Teléfono</div>
+                                    <div style={{ fontWeight: "500", lineHeight: "24px" }}>961845682</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        {/* PRODUCTOS */}
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{ fontSize: "13px", fontWeight: "600", textTransform: "uppercase", opacity: ".48", marginBottom: "16px" }}>
+                                Productos (2)
+                            </div>
+                            <div style={{}}>
+                                <div style={{ width: "100%", display: "inline-block", borderBottom: "1px solid #ccc", paddingBottom: "12px", marginBottom: "12px" }}>
+                                    <div style={{ float: "left", clear: "right" }}>
+                                        <img style={{ width: "80px", borderRadius: "8px" }} src="cover-visit-1.png" />
+                                    </div>
+                                    <div style={{ width: "calc(100% - 90px)", float: "right", clear: "right" }}>
+                                        <div style={{ width: "calc(100% - 80px)", float: "left", clear: "right" }}>
+                                            <div style={{ width: "100%", display: "inline-block", fontWeight: "700", fontSize: "17px", marginBottom: "4px" }}>Visita estándard
+                                            </div>
+                                            <div style={{ width: "100%", display: "inline-block", marginBottom: "4px" }}><div style={{ float: "left", marginRight: "4px", fontWeight: "500" }}>Día:</div> 00/00/2023
+                                            </div>
+                                            <div style={{ width: "100%", display: "inline-block", marginBottom: "4px" }}><div style={{ float: "left", marginRight: "4px", fontWeight: "500" }}>Hora:</div> 10:00 am
+                                            </div>
+                                            <div style={{ width: "100%", display: "inline-block" }}><div style={{ float: "left", marginRight: "4px", fontWeight: "500" }}>Cant. de visitantes:</div> 8
+                                            </div>
+                                        </div>
+                                        <div style={{ width: "80px", float: "right", clear: "right", textAlign: "right", fontSize: "17px", fontWeight: "700" }}>
+                                            <div>S/ 100.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{ width: "100%", display: "inline-block", borderBottom: "1px solid #ccc", paddingBottom: "12px", marginBottom: "12px" }}>
+                                    <div style={{ float: "left", clear: "right" }}>
+                                        <img style={{ width: "80px", borderRadius: "8px" }} src="cover-visit-1.png" />
+                                    </div>
+                                    <div style={{ width: "calc(100% - 90px)", float: "right", clear: "right" }}>
+                                        <div style={{ width: "calc(100% - 80px)", float: "left", clear: "right" }}>
+                                            <div style={{ width: "100%", display: "inline-block", fontWeight: "700", fontSize: "17px", marginBottom: "4px" }}>Video
+                                            </div>
+                                            <div style={{ width: "100%", display: "inline-block", marginBottom: "4px" }}><div style={{ float: "left", marginRight: "4px", fontWeight: "500" }}>Cant:</div> 1
+                                            </div>
+                                        </div>
+                                        <div style={{ width: "80px", float: "right", clear: "right", textAlign: "right", fontSize: "17px", fontWeight: "700" }}>
+                                            <div>S/ 100.00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style={{ width: "100%", display: "inline-block" }}>
+                                    <div style={{ width: "100%", display: "inline-block", marginBottom: "6px" }}>
+                                        <div style={{ width: "50%", float: "left", clear: "right" }}>Sub total
+                                        </div>
+                                        <div style={{ width: "50%", float: "left", clear: "right", textAlign: "right" }}>S/ 100.00
+                                        </div>
+                                    </div>
+                                    <div style={{ width: "100%", display: "inline-block", marginBottom: "6px" }}>
+                                        <div style={{ width: "50%", float: "left", clear: "right" }}>Descuento
+                                        </div>
+                                        <div style={{ width: "50%", float: "left", clear: "right", textAlign: "right" }}>S/ 100.00
+                                        </div>
+                                    </div>
+                                    <div style={{ width: "100%", display: "inline-block", fontWeight: "700", fontSize: "18px" }}>
+                                        <div style={{ width: "50%", float: "left", clear: "right" }}>Total
+                                        </div>
+                                        <div style={{ width: "50%", float: "left", clear: "right", textAlign: "right" }}>S/ 100.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        {/* DATOS DE PAGO */}
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{ fontSize: "13px", fontWeight: "600", textTransform: "uppercase", opacity: ".48", marginBottom: "16px" }}>
+                                Datos de pago
+                            </div>
+                            <div style={{}}>
+                                <div style={{ width: "100%", display: "inline-block"}}>
+                                    <div style={{ float: "left", clear: "right" }}>
+                                        <img style={{ width: "48px", borderRadius: "8px" }} src="logo-visa.png" />
+                                    </div>
+                                    <div style={{ width: "calc(100% - 58px)", float: "right", clear: "right" }}>
+                                        <div style={{ width: "100%", display: "inline-block", fontWeight: "700", fontSize: "17px", marginBottom: "4px" }}>**** **** **** 6987
+                                        </div>
+                                        <div style={{ width: "100%", display: "inline-block", marginBottom: "4px" }}>Sin cuotas
+                                        </div>
+                                        <div style={{ width: "100%", display: "inline-block", marginBottom: "4px" }}><div style={{ float: "left", marginRight: "4px", fontWeight: "500" }}>ID operación</div> #02474984467
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        {/* DATOS DE FACTURACIÓN */}
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{ fontSize: "13px", fontWeight: "600", textTransform: "uppercase", opacity: ".48", marginBottom: "10px" }}>
+                                Datos de facturación
+                            </div>
+                            <div style={{}}>
+                                <div style={{}}>
+                                    <div style={{ fontWeight: "500", fontSize: "19px", marginBottom: "12px" }}>Nombre de la Agencia SAC</div>
+                                </div>
+                                <div style={{ marginBottom: "8px" }}>
+                                    <div style={{}}>Documento de identidad</div>
+                                    <div style={{ fontWeight: "500", lineHeight: "24px" }}>RUC 20548707520</div>
+                                </div>
+                                <div style={{}}>
+                                    <div style={{}}>Dirección</div>
+                                    <div style={{ fontWeight: "500", lineHeight: "24px" }}>Av. Dirección 6798</div>
+                                    <div style={{ fontWeight: "500", lineHeight: "24px" }}>Distrito - Provincia - Departamento</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* CONTENT BOTTOM */}
+                    <div style={{padding: "40px 24px", backgroundColor:"#f2f2f2"}}>                        
+                        {/* RECUERDA */}
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{fontWeight: "700", opacity: ".8", marginBottom: "10px" }}>
+                                Recuerda
+                            </div>
+                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                                ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
+                            </div>
+                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                                ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
+                            </div>
+                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                                ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        {/* CONDICIONES DE COMPRA */}
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{fontWeight: "700", opacity: ".8", marginBottom: "10px" }}>
+                                Condiciones de compra
+                            </div>
+                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                                ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
+                            </div>
+                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                                ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
+                            </div>
+                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                                ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        {/* CONDICIONES DE COMPRA */}
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{fontWeight: "700", opacity: ".8", marginBottom: "10px" }}>
+                                Estimado cliente
+                            </div>
+                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                                ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
+                            </div>
+                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                                ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
+                            </div>
+                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                                ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
+                            </div>
+                        </div>
+                    </div>
+                    {/* FOOTER */}
+                    <div style={{padding: "40px 24px", backgroundColor:"#020202", color:"#fff"}}>  
+                        <div style={{ width: "100%", display: "inline-block"}}>
+                            <div style={{fontWeight: "700", marginBottom: "24px" }}>
+                                Sobre la compra
+                            </div>
+                            <div style={{marginBottom:"10px"}}>
+                                <a style={{color:"#fff", fontWeight:"400"}} href="#">Política de devoluciones</a>
+                            </div>
+                            <div style={{}}>
+                                <a style={{color:"#fff", fontWeight:"400"}} href="#">Términos y condicionesa</a>
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{fontWeight: "700", marginBottom: "24px" }}>
+                                Contáctanos
+                            </div>
+                            <div style={{marginBottom:"10px"}}>
+                                <a style={{color:"#fff", fontWeight:"400"}} href="#">51 - 54 221213</a>
+                            </div>
+                            <div style={{marginBottom:"10px"}}>
+                                <a style={{color:"#fff", fontWeight:"400"}} href="#">51 - 54 221234</a>
+                            </div>
+                            <div style={{marginBottom:"10px"}}>
+                                <a style={{color:"#fff", fontWeight:"400"}} href="#">51 - 54 221235</a>
+                            </div>
+                            <div style={{marginBottom:"10px"}}>
+                                <a style={{color:"#fff", fontWeight:"400"}} href="#">informes@santacatalina.org.pe</a>
+                            </div>
+                            <div style={{}}>
+                                <a style={{color:"#fff", fontWeight:"400"}} href="#">Santa Catalina 301 – Arequipa – Perú</a>
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{fontWeight: "700", marginBottom: "24px" }}>
+                                Síguenos
+                            </div>
+                            <div style={{marginBottom:"10px"}}>
+                                <a style={{}} href="#"><img style={{width:"40px", float:"left", clear:"right", marginRight:"12px"}} src="icon-facebook.svg" /></a>
+                                <a style={{}} href="#"><img style={{width:"40px", float:"left", clear:"right", marginRight:"12px"}} src="icon-instagram.svg" /></a>
+                                <a style={{}} href="#"><img style={{width:"40px"}} src="icon-youtube.svg" /></a>
+                            </div>
+                        </div>
+                        <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
+                        <div style={{ width: "100%", display: "inline-block"}}>
+                            <div style={{fontWeight: "400", opacity:".6"}}>
+                                © 2020 - Monasterio de Santa Catalina
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="SPLASH-RB" className="hidden">
                 <div className="splash-rb fixed w-full h-full top-0 left-0 text-center z-3">
                     <img className="logo-splash" src="logo-monasterio-white.svg" />
                 </div>
@@ -768,7 +1035,7 @@ function ContentHTML() {
                             <div className="surface-100 border-round-lg p-3">
                                 <span className="mb-2 w-full inline-block text-sm">Departamento origen</span>
                                 <Dropdown value={selectedCity} onChange={(e) => setSelectedCity(e.value)} options={cities} optionLabel="name"
-                                                placeholder="Selecciona un departamento" className="w-full" />
+                                    placeholder="Selecciona un departamento" className="w-full" />
                             </div>
                         </div>
                         <div className="col-12 pt-2 pt-4 pb-3 flex">
