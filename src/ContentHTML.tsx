@@ -130,14 +130,14 @@ function ContentHTML() {
 
     return (
         <>
-            <div id="MAIL-RB" className="">
+            <div id="MAIL-RB" className="hidden">
                 <div style={{ backgroundColor: "#fff", position: "fixed", width: "100%", height: "100%", top: "0", left: "0", zIndex: "1001", fontSize: "16px", overflowY: "auto" }}>
                     {/* HEADER */}
                     <div style={{ backgroundColor: "#020202", width: "100%", padding: "16px 0 12px 0", textAlign: "center" }}>
                         <img style={{ maxWidth: "260px", }} src="logo-2-white.svg" />
                     </div>
                     {/* CONTENT TOP */}
-                    <div style={{padding: "40px 24px"}}>
+                    <div style={{ padding: "40px 24px" }}>
                         {/* GREETING CUSTOMER */}
                         <div style={{ fontSize: "19px", width: "100%", display: "inline-block" }}>
                             <img style={{ width: "48px", float: "left", clear: "right", marginRight: "12px" }} src="icon-hand.svg" />
@@ -256,7 +256,7 @@ function ContentHTML() {
                                 Datos de pago
                             </div>
                             <div style={{}}>
-                                <div style={{ width: "100%", display: "inline-block"}}>
+                                <div style={{ width: "100%", display: "inline-block" }}>
                                     <div style={{ float: "left", clear: "right" }}>
                                         <img style={{ width: "48px", borderRadius: "8px" }} src="logo-visa.png" />
                                     </div>
@@ -294,103 +294,103 @@ function ContentHTML() {
                         </div>
                     </div>
                     {/* CONTENT BOTTOM */}
-                    <div style={{padding: "40px 24px", backgroundColor:"#f2f2f2"}}>                        
+                    <div style={{ padding: "40px 24px", backgroundColor: "#f2f2f2" }}>
                         {/* RECUERDA */}
                         <div style={{ width: "100%", display: "inline-block" }}>
-                            <div style={{fontWeight: "700", opacity: ".8", marginBottom: "10px" }}>
+                            <div style={{ fontWeight: "700", opacity: ".8", marginBottom: "10px" }}>
                                 Recuerda
                             </div>
-                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                            <div style={{ fontSize: "15px", textAlign: "justify", marginBottom: "6px" }}>
                                 ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
                             </div>
-                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                            <div style={{ fontSize: "15px", textAlign: "justify", marginBottom: "6px" }}>
                                 ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
                             </div>
-                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                            <div style={{ fontSize: "15px", textAlign: "justify", marginBottom: "6px" }}>
                                 ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
                             </div>
                         </div>
                         <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
                         {/* CONDICIONES DE COMPRA */}
                         <div style={{ width: "100%", display: "inline-block" }}>
-                            <div style={{fontWeight: "700", opacity: ".8", marginBottom: "10px" }}>
+                            <div style={{ fontWeight: "700", opacity: ".8", marginBottom: "10px" }}>
                                 Condiciones de compra
                             </div>
-                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                            <div style={{ fontSize: "15px", textAlign: "justify", marginBottom: "6px" }}>
                                 ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
                             </div>
-                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                            <div style={{ fontSize: "15px", textAlign: "justify", marginBottom: "6px" }}>
                                 ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
                             </div>
-                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                            <div style={{ fontSize: "15px", textAlign: "justify", marginBottom: "6px" }}>
                                 ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
                             </div>
                         </div>
                         <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
                         {/* CONDICIONES DE COMPRA */}
                         <div style={{ width: "100%", display: "inline-block" }}>
-                            <div style={{fontWeight: "700", opacity: ".8", marginBottom: "10px" }}>
+                            <div style={{ fontWeight: "700", opacity: ".8", marginBottom: "10px" }}>
                                 Estimado cliente
                             </div>
-                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                            <div style={{ fontSize: "15px", textAlign: "justify", marginBottom: "6px" }}>
                                 ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
                             </div>
-                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                            <div style={{ fontSize: "15px", textAlign: "justify", marginBottom: "6px" }}>
                                 ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
                             </div>
-                            <div style={{fontSize: "15px", textAlign:"justify", marginBottom: "6px" }}>
+                            <div style={{ fontSize: "15px", textAlign: "justify", marginBottom: "6px" }}>
                                 ¡Sin colas! Dirígete directamente a la sala o a la zona de despacho online en la Dulcería para recoger tu combo. No necesitas pasar por boletería.
                             </div>
                         </div>
                     </div>
                     {/* FOOTER */}
-                    <div style={{padding: "40px 24px", backgroundColor:"#020202", color:"#fff"}}>  
-                        <div style={{ width: "100%", display: "inline-block"}}>
-                            <div style={{fontWeight: "700", marginBottom: "24px" }}>
+                    <div style={{ padding: "40px 24px", backgroundColor: "#020202", color: "#fff" }}>
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{ fontWeight: "700", marginBottom: "24px" }}>
                                 Sobre la compra
                             </div>
-                            <div style={{marginBottom:"10px"}}>
-                                <a style={{color:"#fff", fontWeight:"400"}} href="#">Política de devoluciones</a>
+                            <div style={{ marginBottom: "10px" }}>
+                                <a style={{ color: "#fff", fontWeight: "400" }} href="#">Política de devoluciones</a>
                             </div>
                             <div style={{}}>
-                                <a style={{color:"#fff", fontWeight:"400"}} href="#">Términos y condicionesa</a>
+                                <a style={{ color: "#fff", fontWeight: "400" }} href="#">Términos y condicionesa</a>
                             </div>
                         </div>
                         <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
                         <div style={{ width: "100%", display: "inline-block" }}>
-                            <div style={{fontWeight: "700", marginBottom: "24px" }}>
+                            <div style={{ fontWeight: "700", marginBottom: "24px" }}>
                                 Contáctanos
                             </div>
-                            <div style={{marginBottom:"10px"}}>
-                                <a style={{color:"#fff", fontWeight:"400"}} href="#">51 - 54 221213</a>
+                            <div style={{ marginBottom: "10px" }}>
+                                <a style={{ color: "#fff", fontWeight: "400" }} href="#">51 - 54 221213</a>
                             </div>
-                            <div style={{marginBottom:"10px"}}>
-                                <a style={{color:"#fff", fontWeight:"400"}} href="#">51 - 54 221234</a>
+                            <div style={{ marginBottom: "10px" }}>
+                                <a style={{ color: "#fff", fontWeight: "400" }} href="#">51 - 54 221234</a>
                             </div>
-                            <div style={{marginBottom:"10px"}}>
-                                <a style={{color:"#fff", fontWeight:"400"}} href="#">51 - 54 221235</a>
+                            <div style={{ marginBottom: "10px" }}>
+                                <a style={{ color: "#fff", fontWeight: "400" }} href="#">51 - 54 221235</a>
                             </div>
-                            <div style={{marginBottom:"10px"}}>
-                                <a style={{color:"#fff", fontWeight:"400"}} href="#">informes@santacatalina.org.pe</a>
+                            <div style={{ marginBottom: "10px" }}>
+                                <a style={{ color: "#fff", fontWeight: "400" }} href="#">informes@santacatalina.org.pe</a>
                             </div>
                             <div style={{}}>
-                                <a style={{color:"#fff", fontWeight:"400"}} href="#">Santa Catalina 301 – Arequipa – Perú</a>
+                                <a style={{ color: "#fff", fontWeight: "400" }} href="#">Santa Catalina 301 – Arequipa – Perú</a>
                             </div>
                         </div>
                         <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
                         <div style={{ width: "100%", display: "inline-block" }}>
-                            <div style={{fontWeight: "700", marginBottom: "24px" }}>
+                            <div style={{ fontWeight: "700", marginBottom: "24px" }}>
                                 Síguenos
                             </div>
-                            <div style={{marginBottom:"10px"}}>
-                                <a style={{}} href="#"><img style={{width:"40px", float:"left", clear:"right", marginRight:"12px"}} src="icon-facebook.svg" /></a>
-                                <a style={{}} href="#"><img style={{width:"40px", float:"left", clear:"right", marginRight:"12px"}} src="icon-instagram.svg" /></a>
-                                <a style={{}} href="#"><img style={{width:"40px"}} src="icon-youtube.svg" /></a>
+                            <div style={{ marginBottom: "10px" }}>
+                                <a style={{}} href="#"><img style={{ width: "40px", float: "left", clear: "right", marginRight: "12px" }} src="icon-facebook.svg" /></a>
+                                <a style={{}} href="#"><img style={{ width: "40px", float: "left", clear: "right", marginRight: "12px" }} src="icon-instagram.svg" /></a>
+                                <a style={{}} href="#"><img style={{ width: "40px" }} src="icon-youtube.svg" /></a>
                             </div>
                         </div>
                         <div style={{ width: "100%", display: "inline-block", height: "32px" }}></div>
-                        <div style={{ width: "100%", display: "inline-block"}}>
-                            <div style={{fontWeight: "400", opacity:".6"}}>
+                        <div style={{ width: "100%", display: "inline-block" }}>
+                            <div style={{ fontWeight: "400", opacity: ".6" }}>
                                 © 2020 - Monasterio de Santa Catalina
                             </div>
                         </div>
@@ -404,22 +404,22 @@ function ContentHTML() {
             </div>
             <div id="HOME-RB" className="hidden">
                 <div className="container-rb pt-4">
-                    <div className="grid m-0 pt-7">
+                    <div className="grid m-0 pt-7 pb-3">
                         <div className="col-12 text-center">
                             <img className="logo w-10 md:hidden" src="logo-monasterio.svg" />
                             <img className="logo-2 hidden w-8 md:inline-block" src="logo-2.svg" />
                             <h1 className="text-xl md:text-4xl">Una ciudad dentro de la ciudad</h1>
-                            <p className="md:text-lg">Si quieres vivir la experiencia escoje el circuito de tu interés y visítanos</p>
+                            <p className="md:text-lg">Visita el mayor atractivo turístico de Arequipa, más de 400 años de historia y cultura.</p>
                         </div>
                     </div>
-                    <div className="grid m-0 pb-6">
-                        <div className="col-12 md:col-4">
+                    <div className="grid m-0 pb-6 flex align-items-stretch flex-wrap">
+                        <div className="col-12 md:col-4 flex align-items-center justify-content-center">
                             <div className="itemVisit shadow-2 cursor-pointer">
                                 <div className="topItemVisit flex align-items-center">
                                     <img className="" src="cover-visit-1.png" />
                                 </div>
                                 <div className="bottomItemVisit flex align-items-center p-3">
-                                    <h3 className="flex-1 my-0">Visita estándard</h3>
+                                    <h3 className="flex-1 my-0">Visita presencial</h3>
                                     <Button className="flex" icon="pi pi-arrow-right" rounded text aria-label="" />
                                 </div>
                             </div>
@@ -430,18 +430,27 @@ function ContentHTML() {
                                     <img className="" src="cover-visit-2.png" />
                                 </div>
                                 <div className="bottomItemVisit flex align-items-center p-3">
-                                    <h3 className="flex-1 my-0">Visita teatralizada nocturna</h3>
+                                    <h3 className="flex-1 my-0">Visita nocturna</h3>
+                                    <Button className="flex" icon="pi pi-arrow-right" rounded text aria-label="" />
+                                </div>
+                            </div>
+                            <div className="itemVisit shadow-2 cursor-pointer mt-3">
+                                <div className="topItemVisit flex align-items-center">
+                                    <img className="" src="cover-visit-2.png" />
+                                </div>
+                                <div className="bottomItemVisit flex align-items-center p-3">
+                                    <h3 className="flex-1 my-0">Visita de la peruanidad</h3>
                                     <Button className="flex" icon="pi pi-arrow-right" rounded text aria-label="" />
                                 </div>
                             </div>
                         </div>
-                        <div className="col-12 md:col-4">
+                        <div className="col-12 md:col-4 flex align-items-center justify-content-center">
                             <div className="itemVisit shadow-2 cursor-pointer">
                                 <div className="topItemVisit flex align-items-center">
-                                    <img className="" src="cover-visit-3.png" />
+                                    <img className="" src="cover-visit-2.png" />
                                 </div>
                                 <div className="bottomItemVisit flex align-items-center p-3">
-                                    <h3 className="flex-1 my-0">Visita de la peruanidad</h3>
+                                    <h3 className="flex-1 my-0">Visita guiada teatralizada</h3>
                                     <Button className="flex" icon="pi pi-arrow-right" rounded text aria-label="" />
                                 </div>
                             </div>
@@ -453,10 +462,10 @@ function ContentHTML() {
                         <div className="col-12 text-center md:col-4 md:col-offset-1">
                             <img className="w-10 md:w-full md:pr-4" src="laptop-video.png" />
                         </div>
-                        <div className="col-10 col-offset-1 text-center md:col-5 md:text-left md:col-offset-0">
-                            <h3 className="text-white mt-1 md:mt-3 md:mb-2 md:text-3xl">Compra un paseo virtual</h3>
-                            <p className="text-white font-bold mb-1">Tour virtual - S/ 20.00</p>
-                            <p className="text-white mt-1">El paseo virtual contiene 7 capítulos sobre la fascinante historia del Monasterio.</p>
+                        <div className="col-10 col-offset-1 text-center md:col-6 md:text-left md:col-offset-0 pr-6">
+                            <h3 className="text-white mt-1 md:mt-1 md:mb-2 md:text-3xl">Video: Puerta abierta entre 2 mundos</h3>
+                            <p className="text-white font-bold mb-1">Compra un paseo virtual (peruanos S/ 20.00 y extranjeros $ 8.00)</p>
+                            <p className="text-white mt-1">Contiene 7 capítulos sobre la fascinante historia del Monasterio de Santa Catalina – Único en el mundo con ciudadela – ubicado en Arequipa (Perú), una ciudad considerada por la UNESCO como Patrimonio Cultural de la Humanidad.</p>
                             <Button className="font-semibold" icon="pi pi-cart-plus" label="Agregar al carrito" text raised />
                         </div>
                     </div>
@@ -466,28 +475,19 @@ function ContentHTML() {
                         <div className="col-12 md:col-10 md:col-offset-1">
                             <h3 className="text-center md:text-3xl">Preguntas frecuentes</h3>
                             <Accordion activeIndex={0}>
-                                <AccordionTab header="Descripción de la pregunta">
+                                <AccordionTab header="No pude utilizar mi entrada por motivos de fuerza mayor, ¿la puedo utilizar en otra fecha?">
                                     <p className="m-0">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        Sí podrá hacerlo dentro de los 11 meses siguientes a su compra. Las entradas compradas para día con promoción para peruanos podrán ser utilizadas solamente en los días con promoción (día 10 y último domingo de cada mes).
                                     </p>
                                 </AccordionTab>
-                                <AccordionTab header="Descripción de la pregunta">
+                                <AccordionTab header="No me han llegado mis entradas, ¿cuándo me las van a enviar?">
                                     <p className="m-0">
-                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                                        quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                        sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                                        Consectetur, adipisci velit, sed quia non numquam eius modi.
+                                        No enviamos entradas, podrá ingresar con el código QR que ha llegado a tu correo.
                                     </p>
                                 </AccordionTab>
-                                <AccordionTab header="Descripción de la pregunta">
+                                <AccordionTab header="¿Si tengo carnet de extranjería puedo acceder al precio con promoción para peruanos?">
                                     <p className="m-0">
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                                        quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                                        mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                                        Sí, tiene que presentarlo en Portería al momento de ingresar.
                                     </p>
                                 </AccordionTab>
                             </Accordion>
@@ -507,15 +507,19 @@ function ContentHTML() {
                             <div className="mt-3">
                                 <TabView>
                                     <TabPanel header="Sobre la visita">
-                                        <p className="m-0 text-justify">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        <p className="mt-0 text-justify">
+                                            La visita requiere de una hora como mínimo. El monasterio fue fundado en 1579, construido en sillar y tiene una extensión de más de 20,000 m2.
+                                        </p>
+                                        <p className="mt-0 text-justify">
+                                            El servicio de guiado es opcional, no está incluido en el costo de la entrada, puedes contratar una guía especializada al momento de ingresar.
+                                            Contamos con un aplicativo gratuito en castellano, inglés y francés, puedes descargarlo en tu celular haciendo <a href="#">click aquí.</a>
+                                        </p>
+                                        <p className="mt-0 text-justify">
+                                            Contamos con WiFi gratis.
                                         </p>
                                     </TabPanel>
                                     <TabPanel header="Información general">
-                                        <p className="m-0 text-justify">
+                                        <p className="mt-0 text-justify">
                                             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
                                             eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
                                             enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
@@ -551,7 +555,7 @@ function ContentHTML() {
                                     </div>
                                     <div className="field col-5 md:col-6">
                                         <span className="w-full inline-block font-semibold">Adultos</span>
-                                        <span className="w-full inline-block text-sm opacity-80">S/ 10.00</span>
+                                        <span className="w-full inline-block text-sm opacity-80">S/ 40.00</span>
                                     </div>
                                     <div className="field col-7 md:col-6 flex">
                                         <Button className="flex mr-2" icon="pi pi-minus" rounded text aria-label="" />
@@ -560,7 +564,7 @@ function ContentHTML() {
                                     </div>
                                     <div className="field col-5 md:col-6">
                                         <span className="w-full inline-block font-semibold text-overflow-ellipsis overflow-hidden white-space-nowrap">Adultos mayores</span>
-                                        <span className="w-full inline-block text-sm opacity-80">S/ 10.00</span>
+                                        <span className="w-full inline-block text-sm opacity-80">S/ 20.00</span>
                                     </div>
                                     <div className="field col-7 md:col-6 flex">
                                         <Button className="flex mr-2" icon="pi pi-minus" rounded text aria-label="" />
@@ -569,7 +573,7 @@ function ContentHTML() {
                                     </div>
                                     <div className="field col-5 md:col-6">
                                         <span className="w-full inline-block font-semibold">Universitarios</span>
-                                        <span className="w-full inline-block text-sm opacity-80">S/ 10.00</span>
+                                        <span className="w-full inline-block text-sm opacity-80">S/ 12.00</span>
                                     </div>
                                     <div className="field col-7 md:col-6 flex">
                                         <Button className="flex mr-2" icon="pi pi-minus" rounded text aria-label="" />
@@ -578,7 +582,7 @@ function ContentHTML() {
                                     </div>
                                     <div className="field col-5 md:col-6">
                                         <span className="w-full inline-block font-semibold">Escolares</span>
-                                        <span className="w-full inline-block text-sm opacity-80">S/ 10.00</span>
+                                        <span className="w-full inline-block text-sm opacity-80">S/ 6.00</span>
                                     </div>
                                     <div className="field col-7 md:col-6 flex">
                                         <Button className="flex mr-2" icon="pi pi-minus" rounded text aria-label="" />
@@ -596,8 +600,8 @@ function ContentHTML() {
                                         <img className="mr-2" src="icon-extranjero.svg" /><span className="font-medium opacity-70">Visitantes extranjeros</span><span className="opacity-70 ml-1">(1)</span>
                                     </div>
                                     <div className="field col-5 md:col-6">
-                                        <span className="w-full inline-block font-semibold">Universitarios</span>
-                                        <span className="w-full inline-block text-sm opacity-80">S/ 10.00</span>
+                                        <span className="w-full inline-block font-semibold">Adultos</span>
+                                        <span className="w-full inline-block text-sm opacity-80">S/ 45.00</span>
                                     </div>
                                     <div className="field col-7 md:col-6 flex">
                                         <Button className="flex mr-2" icon="pi pi-minus" rounded text aria-label="" />
@@ -605,8 +609,8 @@ function ContentHTML() {
                                         <Button className="flex ml-2" icon="pi pi-plus" rounded text aria-label="" />
                                     </div>
                                     <div className="field col-5 md:col-6">
-                                        <span className="w-full inline-block font-semibold">Escolares</span>
-                                        <span className="w-full inline-block text-sm opacity-80">S/ 10.00</span>
+                                        <span className="w-full inline-block font-semibold">De 7 a 21 años</span>
+                                        <span className="w-full inline-block text-sm opacity-80">S/ 25.00</span>
                                     </div>
                                     <div className="field col-7 md:col-6 flex">
                                         <Button className="flex mr-2" icon="pi pi-minus" rounded text aria-label="" />
@@ -854,7 +858,7 @@ function ContentHTML() {
                     </div>
                 </div>
             </div>
-            <div id="CHECKOUT-3-RB" className="hidden">
+            <div id="CHECKOUT-3-RB" className="">
                 <div className="container-rb pt-7 pb-4 surface-100">
                     <Steps model={items} className="pt-7" />
                 </div>
@@ -864,7 +868,8 @@ function ContentHTML() {
                             <div className="grid mx-0 md:px-4">
                                 <div className="col-12 pb-3 md:pb-2">
                                     <h2 className="mt-0">Orden #2874947</h2>
-                                    <div className="text-lg">Gracias por tu compra, hemos enviado toda la información sobre la compra al correo <span className="font-medium">visitante@gmail.com</span></div>
+                                    <div className="text-lg">Hemos enviado a tu correo <span className="font-medium">visitante@gmail.com</span> un código QR con los detalles de tu compra, podrás ingresar mostrándolo en portería.
+¡Gracias y que disfrutes de tu visita!</div>
                                 </div>
                                 <div className="col-12">
                                     <div className="surface-100 border-round-xl w-full py-3 p-2 mt-3 md:p-3">
@@ -997,7 +1002,34 @@ function ContentHTML() {
                 </div>
             </div>
             <Sidebar visible={visibleRight} position="right" onHide={() => setVisibleRight(false)} className="w-full md:w-3">
-                <div id="VISITORS" className="">
+                <div id="RETURNS" className="hidden">
+                    <h3>Política de devoluciones</h3>
+                    <p className="text-justify">Se efectuará devolución del pago, solamente en caso de que el visitante no haya podido usar su entrada y esté imposibilitado de regresar al monasterio dentro de un periodo de 11 meses contados a partir de la fecha de compra. La devolución se efectuará dentro de los plazos y parámetros que establecen las plataformas de pago.</p>
+                </div>
+                <div id="TERMS" className="hidden">
+                    <h3>Términos y condiciones</h3>
+                    <ul className="pl-4 text-justify">
+                        <li><p>Las compras realizadas por este medio no permiten anulación o devolución. Por favor verifica tu compra antes de pagar. ¡Gracias!</p></li>
+                        <li><p>El uso de las entradas adquiridas por este medio, solo es válido para el día que indica la orden de compra.</p></li>
+                        <li><p>No está permitido el uso de flash para fotografías de lienzos y pintura mural y en los ambientes donde se indique asimismo, no está permitido el uso de drones.</p></li>
+                        <li><p>Está prohibido el ingreso y consumo de bebidas alcohólicas y/o de personas en estado etílico. Está prohibido fumar dentro del monasterio.</p></li>
+                        <li><p>Antes de ingresar debes mostrar al Portero tu entrada o código QR impreso o desde tu Smartphone para que realice la verificación en el sistema.</p></li>
+                        <li><p>La compra por este medio emite automáticamente boleta de venta. Puedes solicitar factura al momento de realizar tu compra, te llegará en 24 horas.</p></li>
+                        <li><p>El ingreso de mascotas está restringido a aquellas que sean soporte emocional de su dueño. Respete la ley N°29517.</p></li>
+                        <li><p>Los adultos mayores, personas con discapacidad, madres gestantes o con niños pequeños tienen atención preferencial de acuerdo a la Ley Nº 27408.</p></li>
+                        <li><p>Toma en cuenta el horario escogido para tu visita y respetar la misma para evitar aglomeraciones.</p></li>
+                        <li><p>Niños a partir de 7 años pagan entrada.</p></li>
+                        <li><p>Agradeceremos cuides tus pertenencias. El Monasterio de Santa Catalina no se responsabiliza por pérdidas o robos.</p></li>
+                        <li><p>El servicio de guiado es opcional, no está incluido en el precio del boleto, en caso de requerir este servicio lo podrás contratar al momento de tu ingreso y pagarlo directamente a la guía (personal independiente).</p></li>
+                        <li><p>No se permitirá el ingreso de personas que no presenten la entrada virtual con su respectivo código.</p></li>
+                        <li><p>Se debe respetar el ingreso al Monasterio de Santa catalina de acuerdo al orden de llegada.</p></li>
+                    </ul>
+                </div>
+                <div id="ONLINE-PAYMENTS" className="">
+                    <h3>Pagos online</h3>
+                    <p className="text-justify">Para el pago con Tarjeta de Crédito y Débito Visa, MasterCard o American Express utilizamos la plataforma de pagos Izy Pay y Pago efectivo. Estas plataformas realizarán el cobro en nuevos soles. Si la cuenta asociada a tu tarjeta es en dólares, el tipo de cambio utilizado será el de tu banco.</p>
+                </div>
+                <div id="VISITORS" className="hidden">
                     <h3>Detalle de visitantes</h3>
                     <div className="grid">
                         <div className="col-12 pt-4 pb-3 flex">

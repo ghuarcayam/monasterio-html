@@ -90,7 +90,7 @@ function App() {
 
   return (
     <div className="">
-      <header className="shadow-1 fixed w-full z-2 bg-white hidden">
+      <header className="shadow-1 fixed w-full z-2 bg-white">
         <div className="grid m-0">
           <div className="col-2 text-left">
             <Button className="" severity="secondary" icon="pi pi-home" rounded text aria-label="" />
@@ -120,7 +120,7 @@ function App() {
         </div>
       </header>
       <ContentHTML />
-      <footer className="container-rb mt-6 text-white text-center pt-5 pb-7 md:text-left hidden">
+      <footer className="container-rb mt-6 text-white text-center pt-5 pb-7 md:text-left">
         <div className="grid m-0">
           <div className="col-12 md:col-4">
             <h3>Sobre el sitio</h3>
@@ -130,6 +130,9 @@ function App() {
               </li>
               <li className="inline-block w-full">
                 <a href="#" className="text-white no-underline inline-block w-full py-2">Términos y condiciones</a>
+              </li>
+              <li className="inline-block w-full">
+                <a href="#" className="text-white no-underline inline-block w-full py-2">Pagos online</a>
               </li>
             </ul>
           </div>

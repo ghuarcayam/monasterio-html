@@ -245,6 +245,7 @@ h6 {
 
 .p-accordion .p-accordion-header:hover .p-accordion-header-link {
   background-color: #f2f2f2 !important;
+  text-decoration: none !important;
 }
 
 .p-accordion-header-text {
@@ -275,6 +276,35 @@ h6 {
 }
 
 /* END ACCORDEON */
+
+
+/* START TABS VIEW */
+.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus{
+  box-shadow: none !important
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  border-bottom: 5px solid transparent !important;
+  background-color: transparent !important;
+  color: #02020260 !important;
+  text-decoration: none !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  padding-top: 1rem !important;
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link:hover {
+  color: #020202 !important;
+  background-color: #02020208 !important;
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link .p-tabview-title, .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link .p-tabview-title{
+  color: inherit !important;
+}
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: #e9603c !important;
+  border-bottom: 5px solid #e9603c !important;
+}
+
+/* END TABS VIEW */
 
 
 /* START STEPS */
