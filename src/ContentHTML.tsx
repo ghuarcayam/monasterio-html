@@ -402,13 +402,13 @@ function ContentHTML() {
                     <img className="logo-splash" src="logo-monasterio-white.svg" />
                 </div>
             </div>
-            <div id="HOME-RB" className="hidden">
+            <div id="HOME-RB" className="">
                 <div className="container-rb pt-4">
                     <div className="grid m-0 pt-7 pb-3">
                         <div className="col-12 text-center">
                             <img className="logo w-10 md:hidden" src="logo-monasterio.svg" />
                             <img className="logo-2 hidden w-8 md:inline-block" src="logo-2.svg" />
-                            <h1 className="text-xl md:text-4xl">Una ciudad dentro de la ciudad</h1>
+                            <h1 className="text-xl md:text-4xl">¡Una ciudad dentro de la ciudad!</h1>
                             <p className="md:text-lg">Visita el mayor atractivo turístico de Arequipa, más de 400 años de historia y cultura.</p>
                         </div>
                     </div>
@@ -416,7 +416,7 @@ function ContentHTML() {
                         <div className="col-12 md:col-4 flex align-items-center justify-content-center">
                             <div className="itemVisit shadow-2 cursor-pointer">
                                 <div className="topItemVisit flex align-items-center">
-                                    <img className="" src="cover-visit-1.png" />
+                                    <img className="" src="visita-presencial.png" />
                                 </div>
                                 <div className="bottomItemVisit flex align-items-center p-3">
                                     <h3 className="flex-1 my-0">Visita presencial</h3>
@@ -427,7 +427,7 @@ function ContentHTML() {
                         <div className="col-12 md:col-4">
                             <div className="itemVisit shadow-2 cursor-pointer">
                                 <div className="topItemVisit flex align-items-center">
-                                    <img className="" src="cover-visit-2.png" />
+                                    <img className="" src="visita-nocturna.png" />
                                 </div>
                                 <div className="bottomItemVisit flex align-items-center p-3">
                                     <h3 className="flex-1 my-0">Visita nocturna</h3>
@@ -436,7 +436,7 @@ function ContentHTML() {
                             </div>
                             <div className="itemVisit shadow-2 cursor-pointer mt-3">
                                 <div className="topItemVisit flex align-items-center">
-                                    <img className="" src="cover-visit-2.png" />
+                                    <img className="" src="visita-peruanos.png" />
                                 </div>
                                 <div className="bottomItemVisit flex align-items-center p-3">
                                     <h3 className="flex-1 my-0">Visita de la peruanidad</h3>
@@ -447,7 +447,7 @@ function ContentHTML() {
                         <div className="col-12 md:col-4 flex align-items-center justify-content-center">
                             <div className="itemVisit shadow-2 cursor-pointer">
                                 <div className="topItemVisit flex align-items-center">
-                                    <img className="" src="cover-visit-2.png" />
+                                    <img className="" src="visita-teatralizada.png" />
                                 </div>
                                 <div className="bottomItemVisit flex align-items-center p-3">
                                     <h3 className="flex-1 my-0">Visita guiada teatralizada</h3>
@@ -858,7 +858,7 @@ function ContentHTML() {
                     </div>
                 </div>
             </div>
-            <div id="CHECKOUT-3-RB" className="">
+            <div id="CHECKOUT-3-RB" className="hidden">
                 <div className="container-rb pt-7 pb-4 surface-100">
                     <Steps model={items} className="pt-7" />
                 </div>

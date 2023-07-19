@@ -477,7 +477,9 @@ header .p-badge {
   border-radius: 12px;
   overflow: auto;
 }
-
+.itemVisit:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16) !important;
+}
 .topItemVisit {}
 
 .topItemVisit img {
