@@ -131,9 +131,6 @@ function App() {
               <li className="inline-block w-full">
                 <a href="#" className="text-white no-underline inline-block w-full py-2">Términos y condiciones</a>
               </li>
-              <li className="inline-block w-full">
-                <a href="#" className="text-white no-underline inline-block w-full py-2">Pagos online</a>
-              </li>
             </ul>
           </div>
           <div className="col-12 md:col-4">

@@ -402,7 +402,7 @@ function ContentHTML() {
                     <img className="logo-splash" src="logo-monasterio-white.svg" />
                 </div>
             </div>
-            <div id="HOME-RB" className="">
+            <div id="HOME-RB" className="hidden">
                 <div className="container-rb pt-4">
                     <div className="grid m-0 pt-7 pb-3">
                         <div className="col-12 text-center">
@@ -511,7 +511,7 @@ function ContentHTML() {
                                             La visita requiere de una hora como mínimo. El monasterio fue fundado en 1579, construido en sillar y tiene una extensión de más de 20,000 m2.
                                         </p>
                                         <p className="mt-0 text-justify">
-                                            El servicio de guiado es opcional, no está incluido en el costo de la entrada, puedes contratar una guía especializada al momento de ingresar.
+                                            El servicio de guiado es opcional, no está incluido en el precio de la entrada, puedes contratar una guía especializada al momento de ingresar.
                                             Contamos con un aplicativo gratuito en castellano, inglés y francés, puedes descargarlo en tu celular haciendo <a href="#">click aquí.</a>
                                         </p>
                                         <p className="mt-0 text-justify">
@@ -858,7 +858,7 @@ function ContentHTML() {
                     </div>
                 </div>
             </div>
-            <div id="CHECKOUT-3-RB" className="hidden">
+            <div id="CHECKOUT-3-RB" className="">
                 <div className="container-rb pt-7 pb-4 surface-100">
                     <Steps model={items} className="pt-7" />
                 </div>
@@ -868,8 +868,7 @@ function ContentHTML() {
                             <div className="grid mx-0 md:px-4">
                                 <div className="col-12 pb-3 md:pb-2">
                                     <h2 className="mt-0">Orden #2874947</h2>
-                                    <div className="text-lg">Hemos enviado a tu correo <span className="font-medium">visitante@gmail.com</span> un código QR con los detalles de tu compra, podrás ingresar mostrándolo en portería.
-¡Gracias y que disfrutes de tu visita!</div>
+                                    <div className="text-lg">Recibirás en tu bandeja de correo <span className="font-medium">visitante@gmail.com</span> un código QR con los detalles de tu compra, podrás ingresar mostrándolo en portería. ¡Gracias y que disfrutes de tu visita!</div>
                                 </div>
                                 <div className="col-12">
                                     <div className="surface-100 border-round-xl w-full py-3 p-2 mt-3 md:p-3">
@@ -1008,26 +1007,27 @@ function ContentHTML() {
                 </div>
                 <div id="TERMS" className="hidden">
                     <h3>Términos y condiciones</h3>
-                    <ul className="pl-4 text-justify">
-                        <li><p>Las compras realizadas por este medio no permiten anulación o devolución. Por favor verifica tu compra antes de pagar. ¡Gracias!</p></li>
-                        <li><p>El uso de las entradas adquiridas por este medio, solo es válido para el día que indica la orden de compra.</p></li>
-                        <li><p>No está permitido el uso de flash para fotografías de lienzos y pintura mural y en los ambientes donde se indique asimismo, no está permitido el uso de drones.</p></li>
-                        <li><p>Está prohibido el ingreso y consumo de bebidas alcohólicas y/o de personas en estado etílico. Está prohibido fumar dentro del monasterio.</p></li>
-                        <li><p>Antes de ingresar debes mostrar al Portero tu entrada o código QR impreso o desde tu Smartphone para que realice la verificación en el sistema.</p></li>
-                        <li><p>La compra por este medio emite automáticamente boleta de venta. Puedes solicitar factura al momento de realizar tu compra, te llegará en 24 horas.</p></li>
-                        <li><p>El ingreso de mascotas está restringido a aquellas que sean soporte emocional de su dueño. Respete la ley N°29517.</p></li>
-                        <li><p>Los adultos mayores, personas con discapacidad, madres gestantes o con niños pequeños tienen atención preferencial de acuerdo a la Ley Nº 27408.</p></li>
-                        <li><p>Toma en cuenta el horario escogido para tu visita y respetar la misma para evitar aglomeraciones.</p></li>
-                        <li><p>Niños a partir de 7 años pagan entrada.</p></li>
-                        <li><p>Agradeceremos cuides tus pertenencias. El Monasterio de Santa Catalina no se responsabiliza por pérdidas o robos.</p></li>
-                        <li><p>El servicio de guiado es opcional, no está incluido en el precio del boleto, en caso de requerir este servicio lo podrás contratar al momento de tu ingreso y pagarlo directamente a la guía (personal independiente).</p></li>
-                        <li><p>No se permitirá el ingreso de personas que no presenten la entrada virtual con su respectivo código.</p></li>
-                        <li><p>Se debe respetar el ingreso al Monasterio de Santa catalina de acuerdo al orden de llegada.</p></li>
+                    <ul className="pl-0 text-justify">
+                        <li className="list-none"><h4>Compra online</h4></li>
+                        <li className="ml-3"><p className="text-justify">Las compras realizadas por este medio no permiten anulación o devolución. Por favor verifica tu compra antes de pagar. ¡Gracias!</p></li>
+                        <li className="ml-3"><p className="text-justify">El uso de las entradas adquiridas por este medio, solo es válido para el día que indica la orden de compra.</p></li>
+                        <li className="ml-3"><p className="text-justify">No está permitido el uso de flash para fotografías de lienzos y pintura mural y en los ambientes donde se indique asimismo, no está permitido el uso de drones.</p></li>
+                        <li className="ml-3"><p className="text-justify">Está prohibido el ingreso y consumo de bebidas alcohólicas y/o de personas en estado etílico. Está prohibido fumar dentro del monasterio.</p></li>
+                        <li className="ml-3"><p className="text-justify">Antes de ingresar debes mostrar al Portero tu entrada o código QR impreso o desde tu Smartphone para que realice la verificación en el sistema.</p></li>
+                        <li className="ml-3"><p className="text-justify">La compra por este medio emite automáticamente boleta de venta. Puedes solicitar factura al momento de realizar tu compra, te llegará en 24 horas.</p></li>
+                        <li className="ml-3"><p className="text-justify">El ingreso de mascotas está restringido a aquellas que sean soporte emocional de su dueño. Respete la ley N°29517.</p></li>
+                        <li className="ml-3"><p className="text-justify">Los adultos mayores, personas con discapacidad, madres gestantes o con niños pequeños tienen atención preferencial de acuerdo a la Ley Nº 27408.</p></li>
+                        <li className="ml-3"><p className="text-justify">Toma en cuenta el horario escogido para tu visita y respetar la misma para evitar aglomeraciones.</p></li>
+                        <li className="ml-3"><p className="text-justify">Niños a partir de 7 años pagan entrada.</p></li>
+                        <li className="ml-3"><p className="text-justify">Agradeceremos cuides tus pertenencias. El Monasterio de Santa Catalina no se responsabiliza por pérdidas o robos.</p></li>
+                        <li className="ml-3"><p className="text-justify">El servicio de guiado es opcional, no está incluido en el precio del boleto, en caso de requerir este servicio lo podrás contratar al momento de tu ingreso y pagarlo directamente a la guía (personal independiente).</p></li>
+                        <li className="ml-3"><p className="text-justify">No se permitirá el ingreso de personas que no presenten la entrada virtual con su respectivo código.</p></li>
+                        <li className="ml-3"><p className="text-justify">Se debe respetar el ingreso al Monasterio de Santa catalina de acuerdo al orden de llegada.</p></li>
                     </ul>
-                </div>
-                <div id="ONLINE-PAYMENTS" className="">
-                    <h3>Pagos online</h3>
-                    <p className="text-justify">Para el pago con Tarjeta de Crédito y Débito Visa, MasterCard o American Express utilizamos la plataforma de pagos Izy Pay y Pago efectivo. Estas plataformas realizarán el cobro en nuevos soles. Si la cuenta asociada a tu tarjeta es en dólares, el tipo de cambio utilizado será el de tu banco.</p>
+                    <ul className="pl-0 text-justify">
+                        <li className="list-none"><h4>Pagos online</h4></li>
+                        <li className="ml-3"><p className="text-justify">Para el pago con Tarjeta de Crédito y Débito Visa, MasterCard o American Express utilizamos la plataforma de pagos Izy Pay y Pago efectivo. Estas plataformas realizarán el cobro en nuevos soles. Si la cuenta asociada a tu tarjeta es en dólares, el tipo de cambio utilizado será el de tu banco.</p></li>
+                    </ul>
                 </div>
                 <div id="VISITORS" className="hidden">
                     <h3>Detalle de visitantes</h3>
